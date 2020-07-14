@@ -4,8 +4,8 @@ import {
 
 export const themes = {
     primary: {
-        background: '#000',
-        color: '#efefef'
+        backgroundColor: '#fff',
+        color: '#000'
     },
     secondery: {
         background: '#efefef',

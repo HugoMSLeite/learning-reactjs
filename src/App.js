@@ -1,31 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import ErrorBoundary from './ErrorBoundary';
-import Card from './Card';
-import { ThemeContext, themes } from './Theme'
-
-function TesteError(props) {
-  useEffect(() => {
-
-  }, [])
-  //Essa linha força o erro
-  //let forceError = props.error.error
-  return <h1>Sistema rodando</h1>
-}
+import Home from './Pages/Home';
+import { ThemeContext, themes } from './Theme';
 
 function App(props) {
   const [token, setToken] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
       setToken('341h41uhsdflkjqh1')
-    }, 4000)
+      setLoading(true)
+    }, 5000)
   }, [])
 
   return (
     <ErrorBoundary>
-      <TesteError></TesteError>
       <ThemeContext.Provider value={{ ...themes.primary, token }}>
-        <Card></Card>
+        <Home loading={loading}></Home>
       </ThemeContext.Provider>
     </ErrorBoundary>
   );

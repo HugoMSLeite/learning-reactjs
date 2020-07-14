@@ -4,7 +4,7 @@ Esse projeto está sendo desenvolvido para estudos sobre react.
 A princípio o foco foi mais no código, sendo o layout bem básico.
 Esse webapp mostra como usar ErrorBoundery, para exibir erros no console sem parar toda a aplicação.
 Mostra o uso de alguns Hooks, e o ciclo de vida usando o Hook useEffect.
-Como usar o Context API, Fragments, Render props, PropType e Refs.
+Como usar o Context API, Render props, PropType e Refs.
 
 Ainda tem muito a evoluir. Esse é só o começo.
 Os comentários ainda são básicos, mas logo vão ficar mais detalhados.
